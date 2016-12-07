@@ -1,0 +1,32 @@
+{
+  "name": "employee-manager",
+  "version": "0.1.0",
+  "description": "",
+  "author": "",
+  "license": "",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular-mocks": "~1.4.7",
+    "bardjs": "~0.1.8"
+  },
+  "dependencies": {
+    "angular": "~1.4.7",
+    "angular-animate": "~1.4.7",
+    "angular-bootstrap": "~0.14.0",
+    "angular-sanitize": "~1.4.7",
+    "angular-toastr": "~1.5.0",
+    "angular-ui-router": "~0.2.15",
+    "bootstrap-sass": "~3.3.4",
+    "lodash": "~3.10.1",
+    "angular-smart-table": "^2.1.8",
+    "angular-loading-bar": "^0.9.0",
+    "angular-xeditable": "^0.5.0"
+  }
+}

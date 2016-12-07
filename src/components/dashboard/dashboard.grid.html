@@ -1,0 +1,28 @@
+<div class="row">
+  <div class="col-xs-12 col-sm-6 col-md-4">
+    <div class="input-group">
+      <span class="input-group-addon" id="basic-addon1">Search</span>
+      <input type="text" class="form-control" ng-model="vm.searchText" placeholder="Global search..." aria-describedby="basic-addon1">
+    </div>
+  </div>
+  <div class="col-xs-12 col-sm-6 col-md-4">
+    <div class="input-group">
+      <span class="input-group-addon" id="basic-addon1">Sort</span>
+      <select class="form-control" ng-model="vm.sortOrder" ng-options="option.value as option.name for option in vm.sortOptions"></select>
+    </div>
+  </div>
+</div>
+<hr>
+<div class="row">
+  <div class="col-xs-6 col-sm-6 col-md-4" ng-repeat="employee in vm.allEmployees | filter: vm.searchText | orderBy: vm.sortOrder">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <h3>{{employee.firstName}} {{employee.lastName}} <small>{{employee.title}}</small></h3>
+        <hr>
+        <h5><small>Date of Birth</small> {{employee.birthDate}}</h5>
+        <h5><small>Date of Joining</small> {{employee.birthDate}}</h5>
+        <h5><small>Department</small> {{employee.dept}}</h5>
+      </div>
+    </div>
+  </div>
+</div>

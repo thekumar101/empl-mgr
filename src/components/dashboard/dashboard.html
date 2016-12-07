@@ -1,0 +1,7 @@
+<section id="dashboard-view" class="container-fluid">
+  <h1>Employee {{vm.viewType}}
+    <tmpl-dashboard-view-toggle></tmpl-dashboard-view-toggle>
+  </h1>
+  <tmpl-dashboard-list ng-show="vm.viewType === 'List'"></tmpl-dashboard-list>
+  <tmpl-dashboard-grid ng-show="vm.viewType === 'Grid'"></tmpl-dashboard-grid>
+</section>
